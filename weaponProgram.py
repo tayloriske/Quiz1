@@ -7,7 +7,7 @@ import csv
 - Create an instance of the weapon object for each record. 
 - Create a dictionary that will contain the name of the weapon as the key and the number of bullets as the value. 
 - Print out details of each weapon using the object's methods only (as per comments below). 
-- Fire all bullets of the weapon and print a countdown of bullets remaining (run exe file to visualize).
+- Fire all bullets of the weapon and print a countdown of bullets remaining (run exe file to visualize, HINT: use end='\r' in your print statement).
 - Print out the name of the weapon and the number of bullets from the dictionary.
 
 HINT: Follow the comments for each line to help with the logic of the problem.
