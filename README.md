@@ -1,4 +1,4 @@
-This project is for Quiz I of the Spring Semester 2022 for MIS 5322.
+This project is for Quiz I of the Fall Semester 2022 for MIS 5322.
 
 You are required to clone the repo, work the problem
 and push changes/updates to your GitHub repo with appropriate comments
