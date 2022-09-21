@@ -3,7 +3,8 @@ This project is for Quiz I of the Spring Semester 2022 for MIS 5322.
 You are required to clone the repo, work the problem
 and push changes/updates to your GitHub repo with appropriate comments
 
-You are required to create a virtual environment (VE), activate the virtual environment
-and install the library - Matplotlib
+Create a virtual environment and name it quizVE
+activate the virtual environment and install the library - SciPy
 
-Make sure your local and GitHub repos do not contain your VE
+Make sure your GitHub repo DOES NOT contain your VE
+Make sure your GitHub repo DOES contain your gitignore file
