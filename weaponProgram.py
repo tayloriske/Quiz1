@@ -16,21 +16,13 @@ HINT: Follow the comments for each line to help with the logic of the problem.
 
 # create a file object to open the file in read mode
 
-
-
-# create a csv object from the file object
-
-
-
-#skip the header row
-
-
-
+with open("weapons.txt", "rb") as infile, open("weapons.csv", "wb") as outfile:
+    next(infile)
+    outfile.write(infile.read())
 
 #create an empty dictionary named 'weapons_dict'
 
-
-
+weapons_dict = {}
 
 #use a for loop to iterate through every row of the csv file
 
@@ -43,40 +35,38 @@ HINT: Follow the comments for each line to help with the logic of the problem.
 
     # append the name and bullet count to 'weapons_dict'
     
+def main():
+    name = input("Name:")
+    speed = input("Speed:")
+    range = input("Range:")
 
-
+    weapon = w.Weapon(name, speed, range)
+    bullets = weapon.get_bullets()
     # print out the name of the weapon using the appropriate method of the object 
-    
+    print("Weapon Name:", weapon.get_name())
     # print out the speed of the weapon using the appropriate method of the object
-    
+    print("Speed:", weapon.get_speed())
     # print out the range of the weapon using the appropriate method of the object
-    
+    print("Range:", weapon.get_range())
     # print out the number of bullets of the weapon using the appropriate method of the object
-    
+    print("Number of Bullets:", bullets)
 
     #use an input statement to halt the program and wait for the user - 
-    input("Press any key to fire the weapon")
     
-
+    
+    
     # use an appropriate loop to keep firing the weapon until all bullets run out
-    
+    while bullets>0:
+        input("Press any key to fire the weapon")
+        weapon.fire_bullet()
+        print(weapon.get_bullets())
         # call the appropriate method to fire a bullet
        
         # print out the bullet count every time the weapon is fired
-        
+main()     
 
     
 
 
 #using a loop print out the name and number of bullets from the dictionary
-
-
-
-
-    
-
-
-    
-
-
-
+#I RAN OUT OF TIME!
